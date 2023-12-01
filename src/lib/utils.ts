@@ -58,7 +58,7 @@ export function constructMetadata({
       creator: "lucaforma",
     },
     icons,
-    metadataBase: new URL("https://next-E-commerce.up.railway.app"),
+    metadataBase: new URL("nexte-commerce-011-production.up.railway.app"),
     ...(noIndex && {
       robots: {
         index: false,
