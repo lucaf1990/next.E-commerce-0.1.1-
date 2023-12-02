@@ -78,7 +78,7 @@ const Page = () => {
             <Link href="/">
               {" "}
               <Image
-                src="/nextE-commerce-logos_transparent.png"
+                src="/nextE-commerce-logos.jpeg"
                 alt="logo"
                 width={200}
                 height={200}
