@@ -75,7 +75,7 @@ const Navbar = async () => {
                 </div>
               </div>
             </div>
-            <div className="ml-10">
+            <div className="ml-4">
               {" "}
               <Link href="/settings">
                 {" "}
