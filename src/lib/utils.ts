@@ -29,7 +29,7 @@ export function constructMetadata({
   title = "next.E-commerce",
   description = "next.E-commerce,a new generation of e-commerce that prioritizes safety, intuitiveness, and a wealth of content.",
   image = "/nextE-commerce-logos_black.png",
-  icons = "/nextE-commerce-logos_black.png",
+  icons = "/favicon.ico",
   noIndex = false,
 }: {
   title?: string;
