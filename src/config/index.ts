@@ -1,6 +1,6 @@
 export const PRODUCT_CATEGORIES = [
   {
-    label: "Components",
+    label: "Web Components",
     value: "web_components" as const,
     featured: [
       {
