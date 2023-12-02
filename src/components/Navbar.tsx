@@ -8,6 +8,7 @@ import { getServerSideUser } from "@/lib/payload-utils";
 import { cookies } from "next/headers";
 import UserAccountNav from "./UserAccountNav";
 import MobileNav from "./MobileNav";
+import { HomeIcon } from "lucide-react";
 
 const Navbar = async () => {
   const nextCookies = cookies();
@@ -19,7 +20,12 @@ const Navbar = async () => {
         <MaxWidthWrapper>
           <div className="flex h-16 items-center">
             <MobileNav />
-
+            <div>
+              <Link href="/">
+                {" "}
+                <HomeIcon />
+              </Link>
+            </div>
             <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
               <NavItems />
             </div>
