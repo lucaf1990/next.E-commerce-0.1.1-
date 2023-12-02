@@ -9,7 +9,7 @@ import {
   LeafyGreenIcon,
   Verified,
 } from "lucide-react";
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 const features = [

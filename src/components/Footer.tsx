@@ -15,7 +15,7 @@ const Footer = () => {
   const pathsToMinimize = ["/verify-email", "/sign-up", "/sign-in"];
   const themes = useTheme();
   return (
-    <footer className=" flex-grow-0">
+    <footer className=" flex-grow-0 mt-20">
       <MaxWidthWrapper>
         <div className="border-t border-gray-200">
           {pathsToMinimize.includes(pathname) ? null : (
