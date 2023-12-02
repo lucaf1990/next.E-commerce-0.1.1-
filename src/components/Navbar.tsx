@@ -8,7 +8,7 @@ import { getServerSideUser } from "@/lib/payload-utils";
 import { cookies } from "next/headers";
 import UserAccountNav from "./UserAccountNav";
 import MobileNav from "./MobileNav";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, Settings, Settings2Icon } from "lucide-react";
 
 const Navbar = async () => {
   const nextCookies = cookies();
@@ -20,10 +20,10 @@ const Navbar = async () => {
         <MaxWidthWrapper>
           <div className="flex h-16 items-center">
             <MobileNav />
-            <div>
+            <div className="w-20 flex  justify-between">
               <Link href="/">
                 {" "}
-                <HomeIcon />
+                <HomeIcon className="text-white" />
               </Link>
             </div>
             <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
@@ -74,6 +74,13 @@ const Navbar = async () => {
                   <Cart />
                 </div>
               </div>
+            </div>
+            <div className="ml-10">
+              {" "}
+              <Link href="/settings">
+                {" "}
+                <Settings className="text-white" />
+              </Link>
             </div>
           </div>
         </MaxWidthWrapper>
