@@ -55,7 +55,7 @@ const ThankYouPage = async ({ searchParams }: PageProps) => {
         <Image
           fill
           src="/thanks.jpeg"
-          className="h-full w-full object-cover object-center"
+          className="h-50 w-50 object-cover object-center"
           alt="thank you for your order"
         />
       </div>
