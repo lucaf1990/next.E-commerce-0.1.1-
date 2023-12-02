@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Page = () => {
-  const { items, removeItem } = useCart();
+  const { items, removeItem, clearCart } = useCart();
 
   const router = useRouter();
 
@@ -20,6 +20,7 @@ const Page = () => {
     trpc.payment.createSession.useMutation({
       onSuccess: ({ url }) => {
         if (url) router.push(url);
+        clearCart();
       },
     });
 
