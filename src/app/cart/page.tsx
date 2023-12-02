@@ -141,7 +141,7 @@ const Page = () => {
                           </div>
                         </div>
 
-                        <p className="mt-4 flex space-x-2 text-sm text-gray-700">
+                        <p className="mt-4 flex space-x-2 text-sm">
                           <Check className="h-5 w-5 flex-shrink-0 text-green-500" />
 
                           <span>Eligible for instant delivery</span>
@@ -158,7 +158,7 @@ const Page = () => {
 
             <div className="mt-6 space-y-4">
               <div className="flex items-center justify-between">
-                <p className="text-sm text-gray-600">Subtotal</p>
+                <p className="text-sm">Subtotal</p>
                 <p className="text-sm font-medium">
                   {isMounted ? (
                     formatPrice(cartTotal)
