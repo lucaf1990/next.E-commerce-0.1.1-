@@ -1,14 +1,13 @@
 "use client";
-
 import { usePathname } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { Linkedin, LinkedinIcon } from "lucide-react";
+import { LinkedinIcon } from "lucide-react";
 import { Input } from "./ui/input";
-const Footer = () => {
+
+export const Footer = () => {
   const message =
     "  This is a development sandbox. The products, transactions, and information displayed on this site are entirely fictional and used solely for showcasing coding and design skills. No real purchases or transactions can be made on this platform.";
   const pathname = usePathname();
@@ -100,21 +99,17 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </MaxWidthWrapper>
-      <div className="flex text-xs justify-center mb-10 mx-auto mr-10">
-        <Input type="text" value={message} disabled content="message" />
+        <Input type="text-area" value={message} disabled />
 
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/luca-forma-987024270/"
-          className="text-white hover:text-red-600 "
+          className="text-white hover:text-red-600"
         >
           For any inquiries, contact{" "}
-          <Linkedin className="bg-blue-400 rounded-sm text-white border-2  border-white " />
+          <LinkedinIcon className="bg-blue-400 rounded-sm text-white border border-2  border-white " />
         </Link>
-      </div>
+      </MaxWidthWrapper>
     </footer>
   );
 };
-
-export default Footer;
