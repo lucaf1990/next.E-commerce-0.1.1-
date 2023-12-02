@@ -53,7 +53,7 @@ const Navbar = async () => {
                     Create account
                   </Link>
                 )}
-
+                <Link href="privacy-policy">Privacy</Link>
                 {user ? (
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                 ) : null}
