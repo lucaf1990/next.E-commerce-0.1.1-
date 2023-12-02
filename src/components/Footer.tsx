@@ -10,7 +10,7 @@ import { Linkedin, LinkedinIcon } from "lucide-react";
 import { Input } from "./ui/input";
 const Footer = () => {
   const message =
-    "  This is a development sandbox. The products, transactions, and information displayed on this site are entirely fictional and used solely for showcasing coding and design skills. No real purchases or transactions can be made on this platform.";
+    " * The products, transactions, and information displayed on this site are entirely fictional and used solely for showcasing coding and design skills. No real purchases or transactions can be made on this platform.";
   const pathname = usePathname();
   const pathsToMinimize = ["/verify-email", "/sign-up", "/sign-in"];
   const themes = useTheme();
