@@ -46,7 +46,7 @@ export default function Marketplace() {
   return (
     <>
       <MaxWidthWrapper>
-        <div className="py-24 mx-auto text-center flex flex-col items-center max-w-3xl">
+        <div className="py-10 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Your platform for top-tier{" "}
             <span className="text-red-600">next.E-commerce</span>.
@@ -75,7 +75,7 @@ export default function Marketplace() {
         />
       </MaxWidthWrapper>
 
-      <section className="border-t border-red-600">
+      <section className=" mt-16 border-t border-red-600">
         <MaxWidthWrapper className="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0 :hover animate-pulse">
             {features.map((feature) => (
