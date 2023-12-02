@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      <div className="flex text-xs justify-center mb-10 mx-auto mr-10">
+      <div className="flex text-xs justify-center mb-10 mx-auto mr-10 mt-20">
         <Input type="text" value={message} disabled content="message" />
 
         <Link
